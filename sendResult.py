@@ -17,7 +17,7 @@ from trainmodule import *
 
 server_ip = '172.16.63.190'
 
-# ESC 디바이스 등록
+# 기존 curl 명령어에서 사용된 헤더와 인자값들을 설정
 headers = {
         'Content-Type': 'text/plain',
 }
@@ -80,5 +80,4 @@ for j in range(250):
             '|c5|'+str(probabilities[0][1].item())+'|c6|'+str(probabilities[0][2].item())+\
             '|c7|'+str(predicted_classes.item())+'|c8|'+str(confidence_scores.item())
     print(f'[{0}] [{j}] {sending_data}')
-    time.sleep(0.5)
     response = requests.post(f'http://{server_ip}:7896/iot/d', params=params, headers=headers, data=sending_data)
