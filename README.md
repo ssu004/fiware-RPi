@@ -15,3 +15,6 @@ fiware 실습할 때 Rpi에 저장될 파일
 - trainmodule.py: pytorchLighting 사용하여 훈련에 필요한 값 초기화 및 훈련을 간소화시킨 모듈
 
 
++) 파일 실행에 필요한 패키지는 모두 최신 버전으로 사용해도 되기 때문에 다음 명령 실행 후 바로 파일 실행 가능
+
+pip install numpy requests pytorch_lightning torch torchmetrics
