@@ -23,7 +23,7 @@ headers = {
 }
 params = {
         'k': 'testkey2023',
-        'i': 'devoce01',
+        'i': 'device01',
 }
 
 # 데이터 값 로드. 편의상 판별할 데이터가 장치에 저장되어 있다고 가정.
